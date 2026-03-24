@@ -1,6 +1,6 @@
 # DS 4320 Project 1 - Credit Card Fraud
 ### Executive Summary
-This README now documents a GFM-focused DS 4320 project and includes completed project metadata (name, NetID, DOI, links, and license) plus a summary table for quick reference. It also contains a defined problem statement, rationale, references with footnotes, a terminology table, callout examples, and code highlighting examples to demonstrate practical GitHub Flavored Markdown usage.
+This repository contains the full deliverable for DS 4320 Project 1. The project addresses the problem of detecting fraudulent credit card transactions using a synthetic relational dataset modeled on the Sparkov fraud-simulation schema. Four interrelated tables — customers, cards, merchants, and transactions — are generated with statistically grounded parameters drawn from Federal Reserve payment-fraud research and published literature. A Random Forest classifier is trained on a joined feature matrix that includes customer demographics, merchant risk ratings, card utilization ratios, and geographic distance between cardholder and merchant. Model performance is evaluated using PR-AUC and ROC-AUC to account for class imbalance. The complete pipeline runs end-to-end in Python using DuckDB for relational querying.
 
 <br>
 
@@ -10,10 +10,10 @@ This README now documents a GFM-focused DS 4320 project and includes completed p
 
 ### Name - Emujin Batzorig
 ### NetID - kfm8nx
-### DOI - [https://doi.org/10.1000/182](https://doi.org/10.1000/182)
+### DOI - [https://doi.org/10.1000/182](https://doi.org/10.1000/182) BLANK!!!!! x
 ### Press Release
 [**Data Science Project uses GFM to meet spec**](https://github.com/UVADS/DS-4320/tree/main)
-### Data - [link to data](https://doi.org/10.1000/182)
+### Data - [link to data](https://myuva-my.sharepoint.com/:f:/g/personal/kfm8nx_virginia_edu/IgCs0UB5YbTrSKrlMvDMkRtQAUZt8q0wntciGDvchRpOP9I?e=ojxvF4)
 ### Pipeline - [analysis code](https://doi.org/10.1000/182)
 ### License - [MIT](LICENSE.md)
 ---
@@ -34,11 +34,13 @@ This README now documents a GFM-focused DS 4320 project and includes completed p
 
 ## Problem Definition
 ### General and Specific Problem
-* **General Problem:** "Make all materials easy to find and access"
-* **Specific Problem:** Demonstrate key features of GFM that enables a more readable document.
+* **General Problem:** Detect credit card fraud in financial transaction data. 
+* **Specific Problem:** Build a relational dataset with stakeholders, cards, merchants, and transactions, then use it to predict whether a transaction is fraudulent. 
 ### Rationale
-The core issue is that no one has been trained in the use of GFM, rather people pick up bits and pieces here and there. In order to use the tool effectively the user does not need to focus on "easy to find" but rather how the tool itself works. The beauty of the Markdown ecosystem is that it takes care of the ease for you. You just have to know which tool to select.
+Credit card fraud is a very broad problem and can involve many things, such as real-time monitoring, customer behavior, and banking systems. For this project, the problem is narrowed to a supervised classification task using structured transaction data. This makes the project manageable while still addressing an important part of fraud detection. A relational approach is also more useful than a single flat table because fraud is often better understood by connecting information about the customer, card, merchant, and transaction.
 ### Motivation
+Credit card fraud is an important problem because fraudulent transactions cause financial losses for both customers and financial institutions. As the number of digital transactions continues to grow, it becomes harder to detect suspicious activity manually. This makes data-driven fraud detection an important tool. This project is motivated by the idea that fraud may be easier to identify when transactions are analyzed along with related information about the customer, card, and merchant instead of looking at each transaction by itself.
+
 ### Press Release Headline and Link
 [**Data Science Project uses GFM to meet spec**](https://github.com/UVADS/DS-4320/tree/main)
 

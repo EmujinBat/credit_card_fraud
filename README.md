@@ -149,11 +149,11 @@ PK  customer_id  INT    ──<- PK  card_id       VARCHAR    PK  trans_id    IN
     dob          DATE     │      credit_limit  FLOAT           category    VARCHAR     │  │
     street       VARCHAR  │      issue_date    DATE            amt         FLOAT       │  │
     city         VARCHAR  │      expiry_date   DATE            trans_date  TIMESTAMP   │  │
-    state        VARCHAR  └──────────────────────────         unix_time   INT         │  │
+    state        VARCHAR  └──────────────────────────          unix_time   INT         │  │
     zip          VARCHAR                                       is_fraud    INT         │  │
     job          VARCHAR                                 ──────────────────────────────┘  │
-    city_pop     INT                                                                       │
-    lat          FLOAT         merchants                                                   │
+    city_pop     INT                                                                      │
+    lat          FLOAT         merchants                                                  │
     long         FLOAT         ─────────────────────────                                  │
                           ┌─── PK  merchant_id  VARCHAR ->────────────────────────────────┘
                           │        merchant     VARCHAR

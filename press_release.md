@@ -1,4 +1,4 @@
-# Identifying Suspicious Patterns in Credit Card Transactions
+# New Data Science Approach Could Help Stop Fraudulent Charges Before They Reach Cardholders
 
 ## Hook
 

@@ -21,7 +21,7 @@ This repository contains the full deliverable for DS 4320 Project 1. The project
 | Name | Emujin Batzorig |
 | NetID | kfm8nx |
 | DOI | [10.5281/zenodo.19211549](https://doi.org/10.5281/zenodo.19211549)
-|  | [Identifying Suspicious Patterns in Credit Card Transactions](https://github.com/EmujinBat/credit_card_fraud/blob/66817f61ed7e69c317fd69555805efdc233f7264/press_release.md) |
+| Press Release | [Identifying Suspicious Patterns in Credit Card Transactions](https://github.com/EmujinBat/credit_card_fraud/blob/66817f61ed7e69c317fd69555805efdc233f7264/press_release.md) |
 | Data | [link to data](https://myuva-my.sharepoint.com/:f:/g/personal/kfm8nx_virginia_edu/IgCs0UB5YbTrSKrlMvDMkRtQAUZt8q0wntciGDvchRpOP9I?e=ojxvF4) |
 | Pipeline | [analysis code (.py)](https://github.com/EmujinBat/credit_card_fraud/blob/1647e91ed219c6527572c7235fbeb9ee26f92d89/pipeline.py) [analysis code (.ipynb)](https://github.com/EmujinBat/credit_card_fraud/blob/641efda5faa257a1934fc74a188934c9b3c467e7/pipeline.ipynb) [analysis code (.md)](https://github.com/EmujinBat/credit_card_fraud/blob/641efda5faa257a1934fc74a188934c9b3c467e7/pipeline.md)|
 | License | [MIT](https://github.com/EmujinBat/credit_card_fraud/blob/bae6ecc7f47604c78f124ce1b221162014e1c3e9/LICENSE) |

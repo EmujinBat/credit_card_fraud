@@ -142,8 +142,8 @@ The Sparkov schema was chosen because it includes named and interpretable fields
 ```
 customers                    cards                        transactions
 ─────────────────────        ─────────────────────────    ──────────────────────────
-PK  customer_id  INT    ──── PK  card_id       VARCHAR    PK  trans_id    INT
-    first        VARCHAR  │      customer_id   INT   FK──┘    trans_num   VARCHAR
+PK  customer_id  INT    ──<- PK  card_id       VARCHAR    PK  trans_id    INT
+    first        VARCHAR  │      customer_id   INT   FK─<-    trans_num   VARCHAR
     last         VARCHAR  │      cc_num        VARCHAR         card_id     VARCHAR FK──┐
     gender       VARCHAR  │      card_type     VARCHAR         merchant_id VARCHAR FK──│──┐
     dob          DATE     │      credit_limit  FLOAT           category    VARCHAR     │  │
@@ -155,7 +155,7 @@ PK  customer_id  INT    ──── PK  card_id       VARCHAR    PK  trans_id  
     city_pop     INT                                                                       │
     lat          FLOAT         merchants                                                   │
     long         FLOAT         ─────────────────────────                                  │
-                          ┌─── PK  merchant_id  VARCHAR ◄─────────────────────────────────┘
+                          ┌─── PK  merchant_id  VARCHAR ->────────────────────────────────┘
                           │        merchant     VARCHAR
                           │        category     VARCHAR
                           │        merch_lat    FLOAT

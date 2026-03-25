@@ -13,7 +13,7 @@ This repository contains the full deliverable for DS 4320 Project 1. The project
 ### Press Release
 [**New Data Science Approach Could Help Stop Fraudulent Charges Before They Reach Cardholders**](https://github.com/EmujinBat/credit_card_fraud/blob/5c2db0f33277153942cb97daf207c980a99b5503/press_release.md)
 ### Data - [link to data](https://myuva-my.sharepoint.com/:f:/g/personal/kfm8nx_virginia_edu/IgCs0UB5YbTrSKrlMvDMkRtQAUZt8q0wntciGDvchRpOP9I?e=ojxvF4)
-### Pipeline - [Analysis script](https://github.com/EmujinBat/credit_card_fraud/blob/1647e91ed219c6527572c7235fbeb9ee26f92d89/pipeline.py)
+### Pipeline - [Analysis script](https://github.com/EmujinBat/credit_card_fraud/blob/eaf6b096410fe70a6113f0bcb9e69c8587df7dba/pipeline.ipynb)
 ### License - [MIT](https://github.com/EmujinBat/credit_card_fraud/blob/bae6ecc7f47604c78f124ce1b221162014e1c3e9/LICENSE)
 ---
 | Spec | Value |
@@ -23,7 +23,7 @@ This repository contains the full deliverable for DS 4320 Project 1. The project
 | DOI | [10.5281/zenodo.19211549](https://doi.org/10.5281/zenodo.19211549)
 | Press Release | [New Data Science Approach Could Help Stop Fraudulent Charges Before They Reach Cardholders](https://github.com/EmujinBat/credit_card_fraud/blob/5c2db0f33277153942cb97daf207c980a99b5503/press_release.md) |
 | Data | [link to data](https://myuva-my.sharepoint.com/:f:/g/personal/kfm8nx_virginia_edu/IgCs0UB5YbTrSKrlMvDMkRtQAUZt8q0wntciGDvchRpOP9I?e=ojxvF4) |
-| Pipeline | [analysis code (.py)](https://github.com/EmujinBat/credit_card_fraud/blob/1647e91ed219c6527572c7235fbeb9ee26f92d89/pipeline.py) [analysis code (.ipynb)](https://github.com/EmujinBat/credit_card_fraud/blob/641efda5faa257a1934fc74a188934c9b3c467e7/pipeline.ipynb) [analysis code (.md)](https://github.com/EmujinBat/credit_card_fraud/blob/641efda5faa257a1934fc74a188934c9b3c467e7/pipeline.md)|
+| Pipeline | [analysis code (.ipynb)](https://github.com/EmujinBat/credit_card_fraud/blob/641efda5faa257a1934fc74a188934c9b3c467e7/pipeline.ipynb) [analysis code (.md)](https://github.com/EmujinBat/credit_card_fraud/blob/641efda5faa257a1934fc74a188934c9b3c467e7/pipeline.md)|
 | License | [MIT](https://github.com/EmujinBat/credit_card_fraud/blob/bae6ecc7f47604c78f124ce1b221162014e1c3e9/LICENSE) |
 
 ---

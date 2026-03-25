@@ -9,22 +9,22 @@ This repository contains the full deliverable for DS 4320 Project 1. The project
 
 ### Name - Emujin Batzorig
 ### NetID - kfm8nx
-### DOI - [https://doi.org/10.1000/182](https://doi.org/10.1000/182) BLANK!!!!! x
+### DOI - [10.5281/zenodo.19211549](https://doi.org/10.5281/zenodo.19211549)
 ### Press Release
-[**Identifying Suspicious Patterns in Credit Card Transactions**]([https://github.com/UVADS/DS-4320/tree/main](https://github.com/EmujinBat/credit_card_fraud/blob/1647e91ed219c6527572c7235fbeb9ee26f92d89/press_release.md))
+[**Identifying Suspicious Patterns in Credit Card Transactions**](https://github.com/EmujinBat/credit_card_fraud/blob/1647e91ed219c6527572c7235fbeb9ee26f92d89/press_release.md)
 ### Data - [link to data](https://myuva-my.sharepoint.com/:f:/g/personal/kfm8nx_virginia_edu/IgCs0UB5YbTrSKrlMvDMkRtQAUZt8q0wntciGDvchRpOP9I?e=ojxvF4)
-### Pipeline - [analysis code](https://github.com/EmujinBat/credit_card_fraud/blob/1647e91ed219c6527572c7235fbeb9ee26f92d89/pipeline.py)
-### License - [MIT](LICENSE.md)
+### Pipeline - [Identifying Suspicious Patterns in Credit Card Transactions](https://github.com/EmujinBat/credit_card_fraud/blob/66817f61ed7e69c317fd69555805efdc233f7264/press_release.md)
+### License - [MIT](https://github.com/EmujinBat/credit_card_fraud/blob/bae6ecc7f47604c78f124ce1b221162014e1c3e9/LICENSE)
 ---
 | Spec | Value |
 |---|---|
 | Name | Emujin Batzorig |
 | NetID | kfm8nx |
-| DOI | [https://doi.org/10.1000/182](https://doi.org/10.1000/182) |
-| Press Release | [Identifying Suspicious Patterns in Credit Card Transactions]([https://github.com/UVADS/DS-4320/tree/main](https://github.com/EmujinBat/credit_card_fraud/blob/1647e91ed219c6527572c7235fbeb9ee26f92d89/press_release.md)) |
+| DOI | [10.5281/zenodo.19211549](https://doi.org/10.5281/zenodo.19211549)
+|  | [Identifying Suspicious Patterns in Credit Card Transactions](https://github.com/EmujinBat/credit_card_fraud/blob/66817f61ed7e69c317fd69555805efdc233f7264/press_release.md) |
 | Data | [link to data](https://myuva-my.sharepoint.com/:f:/g/personal/kfm8nx_virginia_edu/IgCs0UB5YbTrSKrlMvDMkRtQAUZt8q0wntciGDvchRpOP9I?e=ojxvF4) |
-| Pipeline | [analysis code]([https://doi.org/10.1000/182](https://github.com/EmujinBat/credit_card_fraud/blob/1647e91ed219c6527572c7235fbeb9ee26f92d89/pipeline.py)) |
-| License | [MIT](LICENSE.md) |
+| Pipeline | [analysis code (.py)](https://github.com/EmujinBat/credit_card_fraud/blob/1647e91ed219c6527572c7235fbeb9ee26f92d89/pipeline.py) [analysis code (.ipynb)](https://github.com/EmujinBat/credit_card_fraud/blob/641efda5faa257a1934fc74a188934c9b3c467e7/pipeline.ipynb) [analysis code (.md)](https://github.com/EmujinBat/credit_card_fraud/blob/641efda5faa257a1934fc74a188934c9b3c467e7/pipeline.md)|
+| License | [MIT](https://github.com/EmujinBat/credit_card_fraud/blob/bae6ecc7f47604c78f124ce1b221162014e1c3e9/LICENSE) |
 
 ---
 <br>
@@ -41,7 +41,7 @@ The original problem is too broad because credit card fraud involves many system
 Credit card fraud remains a significant financial problem, especially as digital and card based payments continue to grow. Because of the scale of modern transaction systems, fraud detection cannot rely on manual review alone. Data driven methods are necessary to identify suspicious activity efficiently and early. This project is motivated by the need to better understand which features are useful for fraud detection and how relational data can improve that process. By modeling the relationships between customers, cards, merchants, and transactions, the project reflects how financial data is structured in real settings and shows how that structure can support better fraud prediction.
 
 ### Press Release Headline and Link
-[**Data Science Project uses GFM to meet spec**](https://github.com/UVADS/DS-4320/tree/main)
+[**Identifying Suspicious Patterns in Credit Card Transactions**](https://github.com/EmujinBat/credit_card_fraud/blob/1647e91ed219c6527572c7235fbeb9ee26f92d89/press_release.md)
 
 ## Domain Exposition
 
@@ -53,6 +53,9 @@ Credit card fraud remains a significant financial problem, especially as digital
 [^3]: Breiman, L. (2001). Random Forests. *Machine Learning, 45*(1), 5–32. https://doi.org/10.1023/A:1010933404324
 [^4]: Codd, E. F. (1970). A Relational Model of Data for Large Shared Data Banks. *Communications of the ACM, 13*(6), 377–387. https://doi.org/10.1145/362384.362685
 [^5]: Harris, B. (2020). Sparkov Data Generation. Kaggle. https://www.kaggle.com/datasets/kartik2112/fraud-detection
+[^6]: Board of Governors of the Federal Reserve System. (2022). *Federal Reserve Payments Study: 2022 Annual Supplement*. https://www.federalreserve.gov/paymentsystems/fr-payments-study.htm
+[^7]: Lokanan, M., Tran, V., & Vuong, N. H. (2022). A supervised machine learning algorithm for detecting and predicting fraud in credit card transactions. *Decision Analytics Journal*. https://www.sciencedirect.com/science/article/pii/S2772662223000036
+[^8]: Dal Pozzolo, A., Caelen, O., Johnson, R. A., & Bontempi, G. (2015). Calibrating Probability with Undersampling for Unbalanced Classification. *IEEE Symposium Series on Computational Intelligence*. https://doi.org/10.1109/SSCI.2015.33
 
 ### Terminology
 
@@ -246,6 +249,24 @@ PK  customer_id  INT    ──── PK  card_id       VARCHAR    PK  trans_id  
 | geo_distance | Derived/propagated | Euclidean proxy — not geodesic; uncertainty propagates from lat/long sampling. |
 | utilisation_ratio | Derived | Ratio of amt to credit_limit; inherits uncertainty from both parent features. |
 
+## Pipeline
 
+*(See [pipeline.py](./pipeline.py) and [pipeline.md](./pipeline.md))*
+
+The pipeline loads all four CSV tables into DuckDB, joins them with SQL to engineer relational features (utilisation ratio, geographic distance, merchant risk, customer age), trains a Random Forest classifier with balanced class weights, and evaluates performance using PR-AUC and ROC-AUC. Results are visualized in publication-quality charts saved to `results/`.
+
+To run the full pipeline:
+
+```bash
+python credit_card_creation.py   # generate 10M rows → data/*.csv
+python convert_to_parquet.py     # convert to Parquet (requires pyarrow) → data/*.parquet
+python pipeline.py               # run ML pipeline
+```
+
+---
+
+## License
+
+MIT License — see [LICENSE](./LICENSE)
 
 

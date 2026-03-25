@@ -172,12 +172,12 @@ PK  customer_id  INT    ──── PK  card_id       VARCHAR    PK  trans_id  
 
 ### Data Table
 
-| Table | Brief Description | Link to CSV |
+| Table | Brief Description | Link to Parquet |
 |-------|------------------|-------------|
-| customers | 1,000 synthetic cardholders with demographics, location, and employment. | [customers.parquet](./data/customers.parquet) |
-| cards | 1,264 credit cards linked to customers, with type, limit, and dates. | [cards.parquet](./data/cards.parquet) |
-| merchants | 800 merchants with category, location, and risk rating. | [merchants.parquet](./data/merchants.parquet) |
-| transactions | 10,000,000 transactions (~2% fraudulent) linking cards and merchants. >1 GB. | [transactions.parquet](./data/transactions.parquet) |
+| customers | 1,000 synthetic cardholders with demographics, location, and employment. | [customers.parquet](https://myuva-my.sharepoint.com/:u:/g/personal/kfm8nx_virginia_edu/IQAPIHqPp9fGRr0CuQCppRMcAWth3JPv1GstC4D9lsHxel0?e=1RhdJO) |
+| cards | 1,264 credit cards linked to customers, with type, limit, and dates. | [cards.parquet](https://myuva-my.sharepoint.com/:u:/g/personal/kfm8nx_virginia_edu/IQCckdFOjTYOR7HQmTy5Rjn3AdNrBweoj3dr3U1r6m4MJhw?e=ISWFsG) |
+| merchants | 800 merchants with category, location, and risk rating. | [merchants.parquet](https://myuva-my.sharepoint.com/:u:/g/personal/kfm8nx_virginia_edu/IQCQIwOVaaXvTqsU-qnw9HDuAchTQthtjhXx6h1jx-8DU4E?e=W7ukP6) |
+| transactions | 10,000,000 transactions (~2% fraudulent) linking cards and merchants. >1 GB. | [transactions.parquet](https://myuva-my.sharepoint.com/:u:/g/personal/kfm8nx_virginia_edu/IQAb_7zcfaB2Sb4aw3iptVHXAYraMbYqaG5UHTGinU84Xhw?e=Yay829) |
 
 #### customers
 

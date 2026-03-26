@@ -139,32 +139,8 @@ The Sparkov schema was chosen because it includes named and interpretable fields
 
 ### Schema — ER Diagram (Logical Level)
 
-```
-customers                    cards                        transactions
-─────────────────────        ─────────────────────────    ──────────────────────────
-PK  customer_id  INT    ──<- PK  card_id       VARCHAR    PK  trans_id    INT
-    first        VARCHAR  │      customer_id   INT   FK─<-    trans_num   VARCHAR
-    last         VARCHAR  │      cc_num        VARCHAR         card_id     VARCHAR FK──┐
-    gender       VARCHAR  │      card_type     VARCHAR         merchant_id VARCHAR FK──│──┐
-    dob          DATE     │      credit_limit  FLOAT           category    VARCHAR     │  │
-    street       VARCHAR  │      issue_date    DATE            amt         FLOAT       │  │
-    city         VARCHAR  │      expiry_date   DATE            trans_date  TIMESTAMP   │  │
-    state        VARCHAR  └──────────────────────────          unix_time   INT         │  │
-    zip          VARCHAR                                       is_fraud    INT         │  │
-    job          VARCHAR                                 ──────────────────────────────┘  │
-    city_pop     INT                                                                      │
-    lat          FLOAT         merchants                                                  │
-    long         FLOAT         ─────────────────────────                                  │
-                          ┌─── PK  merchant_id  VARCHAR ->────────────────────────────────┘
-                          │        merchant     VARCHAR
-                          │        category     VARCHAR
-                          │        merch_lat    FLOAT
-                          │        merch_long   FLOAT
-                          │        merch_city   VARCHAR
-                          │        merch_state  VARCHAR
-                          │        risk_rating  VARCHAR
-                          └─────────────────────────────
-```
+<img width="1327" height="3257" alt="diagram-er-diagram" src="https://github.com/user-attachments/assets/61650001-9e29-4058-a253-e19515d6260b" />
+
 
 **Relationships:**
 - `customers` 1 → N `cards` (one customer can hold multiple cards)

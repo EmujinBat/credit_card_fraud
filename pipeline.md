@@ -1,7 +1,7 @@
 # Pipeline: Detecting Fraudulent Credit Card Transactions
 **DS 4320 Project 1 | Emujin Batzorig**
 
-This document is the markdown export of `pipeline.py`. It covers all five pipeline stages: data loading, SQL feature engineering, ML preparation, model training/evaluation, and visualization — with rationale for every major decision.
+This document is the markdown export of `pipeline.ipynb`. It covers all five pipeline stages: data loading, SQL feature engineering, ML preparation, model training/evaluation, and visualization — with rationale for every major decision.
 
 ---
 

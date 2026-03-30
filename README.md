@@ -217,19 +217,17 @@ The Sparkov schema was chosen because it includes named and interpretable fields
 
 | Feature | Type of Uncertainty | Quantification |
 |---------|-------------------|----------------|
-| amt | Scale/distributional | Log-normal (μ=3.5, σ=1.0 legit; μ=5.0, σ=1.2 fraud). Tails may underrepresent extreme fraud. |
-| is_fraud | Label uncertainty | Assigned probabilistically at p=0.02; does not reflect detection-based labeling of real data. |
-| lat / long | Sampling uncertainty | Drawn from uniform range over continental US; not stratified by actual population density. |
-| credit_limit | Scale uncertainty | Derived from age-based heuristic; may not reflect actual credit scoring distributions. |
-| merch_lat / merch_long | Sampling uncertainty | Same uniform US range; geographic clustering of real merchants not captured. |
-| city_pop | Sampling uncertainty | Drawn from uniform distribution over [5000, 3M]; actual city size distributions are right-skewed. |
-| geo_distance | Derived/propagated | Euclidean proxy — not geodesic; uncertainty propagates from lat/long sampling. |
-| utilisation_ratio | Derived | Ratio of amt to credit_limit; inherits uncertainty from both parent features. |
+| `amt` | Distributional | Log-normal: legit mean=$54.68, median=$33.22, std=$71.03; fraud mean=$293.44, median=$146.30, std=$479.79. Fraud amounts are ~5× higher on average but this pattern is dataset-dependent. |
+| `is_fraud` | Label uncertainty | Assigned at p=0.02 (fixed rate). Over 10M rows: expected fraud=200,000 (95% CI: 199,132–200,867). Does not reflect undetected fraud present in real data. |
+| `lat` / `long` | Sampling uncertainty | Drawn from Uniform[25.0°, 48.0°] and Uniform[−122.0°, −71.0°] respectively (continental US only). Mean lat=36.54° (std=6.64°); mean long=−96.50° (std=14.71°). Not stratified by population density. |
+| `credit_limit` | Scale uncertainty | Derived from age-based heuristic. Mean=$7,246, median=$6,700, std=$3,102, range=[$1,600, $19,100]. May not reflect actual credit scoring distributions. |
+| `merch_lat` / `merch_long` | Sampling uncertainty | Same uniform US range as customer coordinates. No geographic clustering of merchants by category is applied. |
+| `city_pop` | Sampling uncertainty | Drawn from Uniform[5,000, 3,000,000]. Mean=1,501,527, std=865,900. Real city populations are right-skewed; this uniform draw overrepresents large cities. |
+| `geo_distance` | Derived/propagated | Euclidean proxy in degrees (not geodesic km). Mean=20.01° (≈2,221 km), median=18.32°, std=11.02°, max=53.78°. Uncertainty propagates from lat/long sampling of both customer and merchant. |
+| `utilisation_ratio` | Derived | Ratio of `amt` to `credit_limit`. Mean=0.0091, median=0.0050, std=0.0136, max=0.4429. Inherits distributional uncertainty from both parent features. |
 
 ## Pipeline
-
-*(See [pipeline.py](./pipeline.py) and [pipeline.md](./pipeline.md))*
-
+*(See [pipeline.md](./pipeline.md))
 The pipeline loads all four CSV tables into DuckDB, joins them with SQL to engineer relational features (utilisation ratio, geographic distance, merchant risk, customer age), trains a Random Forest classifier with balanced class weights, and evaluates performance using PR-AUC and ROC-AUC. Results are visualized in publication-quality charts saved to `results/`.
 
 To run the full pipeline:
@@ -245,5 +243,3 @@ python pipeline.py               # run ML pipeline
 ## License
 
 MIT License — see [LICENSE](./LICENSE)
-
-
